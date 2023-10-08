@@ -6,15 +6,16 @@ import {useTheme} from 'next-themes';
 import {Button} from './ui/button';
 
 export default function ThemeSwitcherButton() {
-	const {theme, setTheme} = useTheme();
+	const {theme, setTheme, systemTheme} = useTheme();
 
 	const onChangeTheme = () => {
-		setTheme(theme === 'light' ? 'dark' : 'light');
+		const currentTheme = theme === 'system' ? systemTheme : theme;
+		setTheme(currentTheme === 'light' ? 'dark' : 'light');
 	};
 
 	return (
 		<Button title="Change theme" onClick={onChangeTheme}>
-			{theme === 'light' ? (
+			{(theme === 'system' ? systemTheme : theme) === 'light' ? (
 				<Moon className="w-4 h-4" />
 			) : (
 				<Sun className="w-4 h-4" />
