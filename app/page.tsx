@@ -12,7 +12,7 @@ export default function Home() {
 				<h1 className="text-4xl font-bold text-center mb-5 bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-gray-500 dark:from-gray-500 dark:to-gray-200">Next.js Template</h1>
 				<div className="flex flex-col">
 					<p className="text-md mb-4">To install the template, run the following command:</p>
-					<code className="p-3 font-mono bg-gray-800 rounded-md text-white flex items-center">
+					<code className="p-3 font-mono bg-gray-800 rounded-md text-white flex items-center shadow-md">
 						{installCommand}
 						<CopyButton textToCopy={installCommand} />
 					</code>
