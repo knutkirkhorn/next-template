@@ -25,7 +25,7 @@ export default function HeaderDropdown() {
 		<div className="flex sm:hidden">
 			<DropdownMenu>
 				<DropdownMenuTrigger asChild>
-					<Button size="sm"><ChevronDown className="w-4 h-4" /></Button>
+					<Button size="sm" aria-label="Open dropdown"><ChevronDown className="w-4 h-4" /></Button>
 				</DropdownMenuTrigger>
 				<DropdownMenuContent>
 					<DropdownMenuItem className="cursor-pointer" onClick={onChangeTheme}>
