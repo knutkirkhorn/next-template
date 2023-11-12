@@ -6,7 +6,7 @@ import HeaderDropdown from './header-dropdown';
 
 export default function Header() {
 	return (
-		<header className="flex justify-end items-center w-full mb-8 sm:mb-0">
+		<header className="flex justify-end items-center w-full mb-8 sm:mb-16">
 			<HeaderDropdown />
 			<nav className="hidden sm:flex space-x-4">
 				<ThemeSwitcherButton />
