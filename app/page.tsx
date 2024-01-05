@@ -14,10 +14,7 @@ export default function Home() {
 				</h1>
 				<div className="flex flex-col">
 					<p className="text-md mb-4">To install the template, run the following command:</p>
-					<code className="p-3 font-mono bg-gray-800 rounded-md text-white flex items-center shadow-md">
-						{installCommand}
-						<CopyButton textToCopy={installCommand} />
-					</code>
+					<CopyButton textToCopy={installCommand} />
 				</div>
 			</div>
 		</main>
