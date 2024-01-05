@@ -7,11 +7,11 @@ import {
 	Github,
 	Moon,
 	Sun,
-	Twitter,
 } from 'lucide-react';
 import {useTheme} from 'next-themes';
 import {DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger} from './ui/dropdown-menu';
 import {Button} from './ui/button';
+import {Icons} from './icons';
 
 export default function HeaderDropdown() {
 	const {theme, setTheme, systemTheme} = useTheme();
@@ -52,7 +52,7 @@ export default function HeaderDropdown() {
 							rel="noopener noreferrer"
 							target="_blank"
 						>
-							<Twitter className="w-4 h-4 mr-2" />
+							<Icons.Twitter className="w-4 h-4 mr-2 fill-current" />
 							Twitter
 						</a>
 					</DropdownMenuItem>

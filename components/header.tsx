@@ -1,8 +1,9 @@
 import React from 'react';
-import {Github, Twitter} from 'lucide-react';
+import {Github} from 'lucide-react';
 import ThemeSwitcherButton from './theme-switcher-button';
 import {Button} from './ui/button';
 import HeaderDropdown from './header-dropdown';
+import {Icons} from './icons';
 
 export default function Header() {
 	return (
@@ -25,7 +26,7 @@ export default function Header() {
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						<Twitter className="w-4 h-4" />
+						<Icons.Twitter className="w-4 h-4 fill-current" />
 					</a>
 				</Button>
 			</nav>
