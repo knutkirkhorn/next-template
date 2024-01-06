@@ -4,6 +4,7 @@ import React from 'react';
 import {Moon, Sun} from 'lucide-react';
 import {useTheme} from 'next-themes';
 import {Button} from './ui/button';
+import {Tooltip, TooltipContent, TooltipTrigger} from './ui/tooltip';
 
 export default function ThemeSwitcherButton() {
 	const {theme, setTheme, systemTheme} = useTheme();
@@ -14,12 +15,19 @@ export default function ThemeSwitcherButton() {
 	};
 
 	return (
-		<Button title="Change theme" onClick={onChangeTheme}>
-			{(theme === 'system' ? systemTheme : theme) === 'light' ? (
-				<Moon className="w-4 h-4" />
-			) : (
-				<Sun className="w-4 h-4" />
-			)}
-		</Button>
+		<Tooltip>
+			<TooltipTrigger asChild>
+				<Button onClick={onChangeTheme}>
+					{(theme === 'system' ? systemTheme : theme) === 'light' ? (
+						<Moon className="w-4 h-4" />
+					) : (
+						<Sun className="w-4 h-4" />
+					)}
+				</Button>
+			</TooltipTrigger>
+			<TooltipContent>
+				Change theme
+			</TooltipContent>
+		</Tooltip>
 	);
 }
