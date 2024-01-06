@@ -3,6 +3,7 @@ import './globals.css';
 import type {Metadata, Viewport} from 'next';
 import {Inter} from 'next/font/google';
 import React from 'react';
+import {TooltipProvider} from '@/components/ui/tooltip';
 
 const inter = Inter({subsets: ['latin']});
 
@@ -27,7 +28,9 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={inter.className}>
 				<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-					{children}
+					<TooltipProvider delayDuration={0}>
+						{children}
+					</TooltipProvider>
 				</ThemeProvider>
 			</body>
 		</html>
