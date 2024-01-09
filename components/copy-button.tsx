@@ -20,12 +20,14 @@ export default function CopyCommandButton({textToCopy}: {textToCopy: string}) {
 		<Tooltip>
 			<TooltipTrigger asChild>
 				<Button
-					className="p-3 font-mono bg-gray-800 hover:bg-gray-700 rounded-md text-white flex items-center shadow-md outline outline-gray-500 outline-1 hover:cursor-pointer"
+					className="p-3 h-fit font-mono bg-gray-800 hover:bg-gray-700 rounded-md text-white flex items-center shadow-md outline outline-gray-500 outline-1 hover:cursor-pointer"
 					onClick={copyToClipboard}
 				>
-					<Terminal className="w-4 h-4 mr-3" />
+					<div className="m-2 mr-4">
+						<Terminal className="w-4 h-4" />
+					</div>
 					{textToCopy}
-					<div className="m-3 ml-4">
+					<div className="m-2 ml-4">
 						{isCopied ? (
 							<Check className="w-4 h-4" />
 						) : (
