@@ -1,4 +1,4 @@
-import CopyButton from '@/components/copy-button';
+import CopyCommandButton from '@/components/copy-button';
 import Header from '@/components/header';
 import React from 'react';
 
@@ -14,7 +14,7 @@ export default function Home() {
 				</h1>
 				<div className="flex flex-col">
 					<p className="text-md mb-4">To install the template, run the following command:</p>
-					<CopyButton textToCopy={installCommand} />
+					<CopyCommandButton textToCopy={installCommand} />
 				</div>
 			</div>
 		</main>

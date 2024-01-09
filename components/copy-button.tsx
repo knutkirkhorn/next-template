@@ -5,7 +5,7 @@ import {Check, Copy, Terminal} from 'lucide-react';
 import {Button} from './ui/button';
 import {Tooltip, TooltipContent, TooltipTrigger} from './ui/tooltip';
 
-export default function CopyButton({textToCopy}: {textToCopy: string}) {
+export default function CopyCommandButton({textToCopy}: {textToCopy: string}) {
 	const [isCopied, setIsCopied] = useState(false);
 
 	const copyToClipboard = () => {
