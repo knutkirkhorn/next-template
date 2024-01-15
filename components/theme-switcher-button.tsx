@@ -25,9 +25,7 @@ export default function ThemeSwitcherButton() {
 					)}
 				</Button>
 			</TooltipTrigger>
-			<TooltipContent>
-				Change theme
-			</TooltipContent>
+			<TooltipContent>Change theme</TooltipContent>
 		</Tooltip>
 	);
 }

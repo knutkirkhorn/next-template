@@ -38,9 +38,7 @@ export default function CopyCommandButton({textToCopy}: {textToCopy: string}) {
 					</div>
 				</Button>
 			</TooltipTrigger>
-			<TooltipContent>
-				Copy to clipboard
-			</TooltipContent>
+			<TooltipContent>Copy to clipboard</TooltipContent>
 		</Tooltip>
 	);
 }

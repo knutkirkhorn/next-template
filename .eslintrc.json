@@ -5,10 +5,10 @@
 		"airbnb",
 		"airbnb-base",
 		"plugin:unicorn/recommended",
-		"plugin:@typescript-eslint/recommended"
+		"plugin:@typescript-eslint/recommended",
+		"prettier"
 	],
 	"rules": {
-		"indent": ["error", "tab"],
 		"no-tabs": "off",
 		"quotes": ["error", "single"],
 		"semi": ["error", "always"],
@@ -27,7 +27,6 @@
 		"react/jsx-filename-extension": ["error", {"extensions": [".tsx"]}],
 		"react/prop-types": "off",
 		"react/jsx-props-no-spreading": "off",
-		"react/require-default-props": "off",
-		"@typescript-eslint/indent": ["error", "tab"]
+		"react/require-default-props": "off"
 	}
 }

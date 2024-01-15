@@ -2,7 +2,8 @@ import CopyCommandButton from '@/components/copy-button';
 import Header from '@/components/header';
 import React from 'react';
 
-const installCommand = 'npx create-next-app@latest -e https://github.com/knutkirkhorn/next-template';
+const installCommand =
+	'npx create-next-app@latest -e https://github.com/knutkirkhorn/next-template';
 
 export default function Home() {
 	return (
@@ -13,7 +14,9 @@ export default function Home() {
 					Next.js Template
 				</h1>
 				<div className="flex flex-col">
-					<p className="text-md mb-4">To install the template, run the following command:</p>
+					<p className="text-md mb-4">
+						To install the template, run the following command:
+					</p>
 					<CopyCommandButton textToCopy={installCommand} />
 				</div>
 			</div>

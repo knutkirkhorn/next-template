@@ -2,14 +2,13 @@
 
 import React from 'react';
 import {DropdownMenu} from '@radix-ui/react-dropdown-menu';
-import {
-	ChevronDown,
-	Github,
-	Moon,
-	Sun,
-} from 'lucide-react';
+import {ChevronDown, Github, Moon, Sun} from 'lucide-react';
 import {useTheme} from 'next-themes';
-import {DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger} from './ui/dropdown-menu';
+import {
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuTrigger,
+} from './ui/dropdown-menu';
 import {Button} from './ui/button';
 import {Icons} from './icons';
 
@@ -25,7 +24,9 @@ export default function HeaderDropdown() {
 		<div className="flex sm:hidden">
 			<DropdownMenu>
 				<DropdownMenuTrigger asChild>
-					<Button size="sm" aria-label="Open dropdown"><ChevronDown className="w-4 h-4" /></Button>
+					<Button size="sm" aria-label="Open dropdown">
+						<ChevronDown className="w-4 h-4" />
+					</Button>
 				</DropdownMenuTrigger>
 				<DropdownMenuContent>
 					<DropdownMenuItem className="cursor-pointer" onClick={onChangeTheme}>
