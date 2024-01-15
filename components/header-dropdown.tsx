@@ -4,13 +4,14 @@ import React from 'react';
 import {DropdownMenu} from '@radix-ui/react-dropdown-menu';
 import {ChevronDown, Github, Moon, Sun} from 'lucide-react';
 import {useTheme} from 'next-themes';
+
+import {Icons} from './icons';
+import {Button} from './ui/button';
 import {
 	DropdownMenuContent,
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from './ui/dropdown-menu';
-import {Button} from './ui/button';
-import {Icons} from './icons';
 
 export default function HeaderDropdown() {
 	const {theme, setTheme, systemTheme} = useTheme();

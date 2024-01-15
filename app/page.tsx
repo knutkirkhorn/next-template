@@ -1,6 +1,7 @@
+import React from 'react';
+
 import CopyCommandButton from '@/components/copy-button';
 import Header from '@/components/header';
-import React from 'react';
 
 const installCommand =
 	'npx create-next-app@latest -e https://github.com/knutkirkhorn/next-template';

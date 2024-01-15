@@ -1,9 +1,10 @@
 import React from 'react';
 import {Github} from 'lucide-react';
-import ThemeSwitcherButton from './theme-switcher-button';
-import {Button} from './ui/button';
+
 import HeaderDropdown from './header-dropdown';
 import {Icons} from './icons';
+import ThemeSwitcherButton from './theme-switcher-button';
+import {Button} from './ui/button';
 
 export default function Header() {
 	return (
