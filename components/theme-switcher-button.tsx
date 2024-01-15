@@ -19,9 +19,9 @@ export default function ThemeSwitcherButton() {
 			<TooltipTrigger asChild>
 				<Button onClick={onChangeTheme}>
 					{(theme === 'system' ? systemTheme : theme) === 'light' ? (
-						<Moon className="w-4 h-4" />
+						<Moon className="h-4 w-4" />
 					) : (
-						<Sun className="w-4 h-4" />
+						<Sun className="h-4 w-4" />
 					)}
 				</Button>
 			</TooltipTrigger>

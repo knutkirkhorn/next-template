@@ -7,9 +7,9 @@ import {Icons} from './icons';
 
 export default function Header() {
 	return (
-		<header className="flex justify-end items-center w-full mb-8 sm:mb-16">
+		<header className="mb-8 flex w-full items-center justify-end sm:mb-16">
 			<HeaderDropdown />
-			<nav className="hidden sm:flex space-x-4">
+			<nav className="hidden space-x-4 sm:flex">
 				<ThemeSwitcherButton />
 				<Button asChild>
 					<a
@@ -17,7 +17,7 @@ export default function Header() {
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						<Github className="w-4 h-4" />
+						<Github className="h-4 w-4" />
 					</a>
 				</Button>
 				<Button asChild>
@@ -26,7 +26,7 @@ export default function Header() {
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						<Icons.Twitter className="w-4 h-4 fill-current" />
+						<Icons.Twitter className="h-4 w-4 fill-current" />
 					</a>
 				</Button>
 			</nav>
