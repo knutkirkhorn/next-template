@@ -19,4 +19,5 @@ npm run dev
 - [Next.js App router](https://nextjs.org/docs/app)
 - [shadcn UI](https://ui.shadcn.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Prettier](https://prettier.io/)
 - Dark and light theme
