@@ -15,7 +15,7 @@ export default function Home() {
 					Next.js Template
 				</h1>
 				<div className="flex flex-col">
-					<p className="text-md mb-4">
+					<p className="mb-4">
 						To install the template, run the following command:
 					</p>
 					<CopyCommandButton textToCopy={installCommand} />
