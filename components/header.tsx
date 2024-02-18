@@ -5,6 +5,24 @@ import HeaderDropdown from './header-dropdown';
 import {Icons} from './icons';
 import ThemeSwitcherButton from './theme-switcher-button';
 import {Button} from './ui/button';
+import {Tooltip, TooltipContent, TooltipTrigger} from './ui/tooltip';
+
+function TooltipButton({
+	children,
+	tooltip,
+}: {
+	children: React.ReactNode;
+	tooltip: string;
+}) {
+	return (
+		<Tooltip>
+			<TooltipTrigger asChild>
+				<Button asChild>{children}</Button>
+			</TooltipTrigger>
+			<TooltipContent>{tooltip}</TooltipContent>
+		</Tooltip>
+	);
+}
 
 export default function Header() {
 	return (
@@ -12,7 +30,7 @@ export default function Header() {
 			<HeaderDropdown />
 			<nav className="hidden space-x-4 sm:flex">
 				<ThemeSwitcherButton />
-				<Button asChild>
+				<TooltipButton tooltip="Open GitHub repository">
 					<a
 						href="https://github.com/knutkirkhorn/next-template"
 						rel="noopener noreferrer"
@@ -20,8 +38,8 @@ export default function Header() {
 					>
 						<Github className="h-4 w-4" />
 					</a>
-				</Button>
-				<Button asChild>
+				</TooltipButton>
+				<TooltipButton tooltip="Open my profile on X">
 					<a
 						href="https://twitter.com/knutkirkhorn"
 						rel="noopener noreferrer"
@@ -29,7 +47,7 @@ export default function Header() {
 					>
 						<Icons.Twitter className="h-4 w-4 fill-current" />
 					</a>
-				</Button>
+				</TooltipButton>
 			</nav>
 		</header>
 	);
