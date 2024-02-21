@@ -9,14 +9,7 @@
 		"prettier"
 	],
 	"rules": {
-		"no-tabs": "off",
-		"quotes": ["error", "single"],
-		"semi": ["error", "always"],
-		"linebreak-style": "off",
-		"arrow-parens": ["error", "as-needed"],
-		"object-curly-spacing": ["error", "never"],
 		"no-console": "off",
-		"max-len": "off",
 		"no-plusplus": "off",
 		"no-await-in-loop": "off",
 		"no-restricted-syntax": "off",
