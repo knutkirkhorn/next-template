@@ -2,7 +2,7 @@
 
 import React from 'react';
 import {DropdownMenu} from '@radix-ui/react-dropdown-menu';
-import {ChevronDown, Github, Moon, Sun} from 'lucide-react';
+import {ChevronDown, Moon, Sun} from 'lucide-react';
 import {useTheme} from 'next-themes';
 
 import {Icons} from './icons';
@@ -44,7 +44,7 @@ export default function HeaderDropdown() {
 							rel="noopener noreferrer"
 							target="_blank"
 						>
-							<Github className="mr-2 h-4 w-4" />
+							<Icons.GitHub className="mr-2 h-4 w-4" />
 							GitHub repository
 						</a>
 					</DropdownMenuItem>

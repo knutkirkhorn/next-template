@@ -1,5 +1,4 @@
 import React from 'react';
-import {Github} from 'lucide-react';
 
 import HeaderDropdown from './header-dropdown';
 import {Icons} from './icons';
@@ -36,7 +35,7 @@ export default function Header() {
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						<Github className="h-4 w-4" />
+						<Icons.GitHub className="h-4 w-4" />
 					</a>
 				</TooltipButton>
 				<TooltipButton tooltip="Open my profile on X">
