@@ -28,6 +28,7 @@ export default [
 			'no-restricted-syntax': 'off',
 			'import/extensions': 'off',
 			'import/prefer-default-export': 'off',
+			'import/no-anonymous-default-export': 'off',
 			'react/jsx-indent': ['error', 'tab'],
 			'react/jsx-indent-props': ['error', 'tab'],
 
