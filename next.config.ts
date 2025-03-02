@@ -7,7 +7,23 @@ const nextConfig: NextConfig = {
 		// ppr: true,
 	},
 	eslint: {
-		dirs: ['app', 'components', 'lib'],
+		dirs: [
+			'app',
+			'components',
+			'db',
+			'drizzle',
+			'hooks',
+			'lib',
+			'tests',
+			// Manually include top level files that are not linted
+			'./auth.ts',
+			'./drizzle.config.ts',
+			'./env.ts',
+			'./eslint.config.mjs',
+			'./postcss.config.mjs',
+			'./prettier.config.mjs',
+			'./tailwind.config.ts',
+		],
 	},
 };
 
