@@ -35,14 +35,12 @@ export default [
 
 			'react/jsx-indent': ['error', 'tab'],
 			'react/jsx-indent-props': ['error', 'tab'],
-
 			'react/jsx-filename-extension': [
 				'error',
 				{
 					extensions: ['.tsx'],
 				},
 			],
-
 			'react/prop-types': 'off',
 			'react/jsx-props-no-spreading': 'off',
 			'react/require-default-props': 'off',
