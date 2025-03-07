@@ -26,15 +26,15 @@ export default function HeaderDropdown() {
 			<DropdownMenu>
 				<DropdownMenuTrigger asChild>
 					<Button size="sm" aria-label="Open dropdown">
-						<ChevronDown className="h-4 w-4" />
+						<ChevronDown className="size-4" />
 					</Button>
 				</DropdownMenuTrigger>
 				<DropdownMenuContent>
 					<DropdownMenuItem className="cursor-pointer" onClick={onChangeTheme}>
 						{(theme === 'system' ? systemTheme : theme) === 'light' ? (
-							<Moon className="mr-2 h-4 w-4" />
+							<Moon className="mr-2 size-4" />
 						) : (
-							<Sun className="mr-2 h-4 w-4" />
+							<Sun className="mr-2 size-4" />
 						)}
 						Switch theme
 					</DropdownMenuItem>
@@ -44,7 +44,7 @@ export default function HeaderDropdown() {
 							rel="noopener noreferrer"
 							target="_blank"
 						>
-							<Icons.GitHub className="mr-2 h-4 w-4" />
+							<Icons.GitHub className="mr-2 size-4" />
 							GitHub repository
 						</a>
 					</DropdownMenuItem>
@@ -54,7 +54,7 @@ export default function HeaderDropdown() {
 							rel="noopener noreferrer"
 							target="_blank"
 						>
-							<Icons.Twitter className="mr-2 h-4 w-4 fill-current" />
+							<Icons.Twitter className="mr-2 size-4 fill-current" />
 							Twitter
 						</a>
 					</DropdownMenuItem>

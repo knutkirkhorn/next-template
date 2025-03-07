@@ -27,14 +27,14 @@ export default function CopyCommandButton({textToCopy}: {textToCopy: string}) {
 					onClick={copyToClipboard}
 				>
 					<div className="m-2 mr-4">
-						<Terminal className="h-4 w-4" />
+						<Terminal className="size-4" />
 					</div>
 					{textToCopy}
 					<div className="m-2 ml-4">
 						{isCopied ? (
-							<Check className="h-4 w-4" />
+							<Check className="size-4" />
 						) : (
-							<Copy className="h-4 w-4" />
+							<Copy className="size-4" />
 						)}
 					</div>
 				</Button>

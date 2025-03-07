@@ -35,7 +35,7 @@ export default function Header() {
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						<Icons.GitHub className="h-4 w-4" />
+						<Icons.GitHub className="size-4" />
 					</a>
 				</TooltipButton>
 				<TooltipButton tooltip="Open my profile on X">
@@ -44,7 +44,7 @@ export default function Header() {
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						<Icons.Twitter className="h-4 w-4 fill-current" />
+						<Icons.Twitter className="size-4 fill-current" />
 					</a>
 				</TooltipButton>
 			</nav>
