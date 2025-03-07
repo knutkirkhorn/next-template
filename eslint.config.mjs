@@ -14,11 +14,7 @@ const compat = new FlatCompat({
 });
 
 export default [
-	...compat.extends(
-		'next/core-web-vitals',
-		'next/typescript',
-		'plugin:@typescript-eslint/recommended',
-	),
+	...compat.extends('next/core-web-vitals', 'next/typescript'),
 	js.configs.recommended,
 	eslintPluginUnicorn.configs.recommended,
 	eslintConfigPrettier,
@@ -29,10 +25,12 @@ export default [
 			'no-await-in-loop': 'off',
 			'no-restricted-syntax': 'off',
 
+			// `import` is included in the Next.js ESLint config
 			'import/extensions': 'off',
 			'import/prefer-default-export': 'off',
 			'import/no-anonymous-default-export': 'off',
 
+			// `react` is included in the Next.js ESLint config
 			'react/jsx-indent': ['error', 'tab'],
 			'react/jsx-indent-props': ['error', 'tab'],
 			'react/jsx-filename-extension': [
