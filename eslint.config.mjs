@@ -24,6 +24,9 @@ export default [
 			'no-plusplus': 'off',
 			'no-await-in-loop': 'off',
 			'no-restricted-syntax': 'off',
+			'no-param-reassign': ['error'],
+			'consistent-return': ['error'],
+			'no-else-return': ['error'],
 
 			// `import` is included in the Next.js ESLint config
 			'import/extensions': 'off',
