@@ -26,11 +26,11 @@ export default function CopyCommandButton({textToCopy}: {textToCopy: string}) {
 					className="flex h-fit items-center rounded-md bg-gray-800 p-3 font-mono text-white shadow-md outline outline-1 outline-gray-500 hover:cursor-pointer hover:bg-gray-700"
 					onClick={copyToClipboard}
 				>
-					<div className="m-2 mr-4">
+					<div className="m-2">
 						<Terminal className="size-4" />
 					</div>
 					{textToCopy}
-					<div className="m-2 ml-4">
+					<div className="m-2">
 						{isCopied ? (
 							<Check className="size-4" />
 						) : (
