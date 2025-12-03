@@ -1,20 +1,12 @@
-import path from 'node:path';
-import {fileURLToPath} from 'node:url';
-import {FlatCompat} from '@eslint/eslintrc';
 import js from '@eslint/js';
+import nextCoreWebVitals from 'eslint-config-next/core-web-vitals';
+import nextTypescript from 'eslint-config-next/typescript';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-	baseDirectory: __dirname,
-	recommendedConfig: js.configs.recommended,
-	allConfig: js.configs.all,
-});
-
 export default [
-	...compat.extends('next/core-web-vitals', 'next/typescript'),
+	...nextCoreWebVitals,
+	...nextTypescript,
 	js.configs.recommended,
 	eslintPluginUnicorn.configs.recommended,
 	eslintConfigPrettier,
@@ -46,5 +38,14 @@ export default [
 			'react/jsx-props-no-spreading': 'off',
 			'react/require-default-props': 'off',
 		},
+	},
+	{
+		ignores: [
+			'node_modules/**',
+			'.next/**',
+			'out/**',
+			'build/**',
+			'next-env.d.ts',
+		],
 	},
 ];
