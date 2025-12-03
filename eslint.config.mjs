@@ -20,6 +20,17 @@ export default [
 			'consistent-return': ['error'],
 			'no-else-return': ['error'],
 
+			'unicorn/prevent-abbreviations': [
+				'error',
+				{
+					allowList: {
+						env: true,
+						db: true,
+						utils: true,
+					},
+				},
+			],
+
 			// `import` is included in the Next.js ESLint config
 			'import/extensions': 'off',
 			'import/prefer-default-export': 'off',
