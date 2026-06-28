@@ -8,22 +8,18 @@ import {Button} from './ui/button';
 import {Tooltip, TooltipContent, TooltipTrigger} from './ui/tooltip';
 
 export default function ThemeSwitcherButton() {
-	const {theme, setTheme, systemTheme} = useTheme();
+	const {resolvedTheme, setTheme} = useTheme();
 
 	const onChangeTheme = () => {
-		const currentTheme = theme === 'system' ? systemTheme : theme;
-		setTheme(currentTheme === 'light' ? 'dark' : 'light');
+		setTheme(resolvedTheme === 'light' ? 'dark' : 'light');
 	};
 
 	return (
 		<Tooltip>
 			<TooltipTrigger asChild>
 				<Button onClick={onChangeTheme}>
-					{(theme === 'system' ? systemTheme : theme) === 'light' ? (
-						<Moon className="size-4" />
-					) : (
-						<Sun className="size-4" />
-					)}
+					<Moon className="size-4 dark:hidden" />
+					<Sun className="hidden size-4 dark:block" />
 				</Button>
 			</TooltipTrigger>
 			<TooltipContent>Change theme</TooltipContent>
